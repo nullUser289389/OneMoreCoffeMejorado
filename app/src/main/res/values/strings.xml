@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">OneMoreCoffeCompleto</string>
+    <string name="strCabeceira">One More Coffee</string>
+    <string name="strPregunta">Que che apetece?</string>
+    
+    <string-array name="entriesSpTipoCafe">
+        <item>Algo frío</item>
+        <item>Descafeinado</item>
+        <item>Algo intenso</item>
+        <item>Algo exótico</item>
+    </string-array>
 </resources>

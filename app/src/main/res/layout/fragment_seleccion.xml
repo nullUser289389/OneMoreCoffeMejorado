@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -9,9 +11,55 @@
         android:orientation="vertical"
         >
 
+        <TextView
+            android:id="@+id/tvCabeceira"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:text="@string/strCabeceira"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:textSize="25sp"
+            android:fontFamily="monospace"
+
+            android:background="#6B4F4F"
+            />
+
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/ivCabeceira"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            />
+
+        <TextView
+            android:id="@+id/tvPregunta"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:paddingVertical="35dp"
+            android:text="@string/strPregunta"
+
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            />
+        <Spinner
+            android:id="@+id/spTipoCafe"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:entries="@array/entriesSpTipoCafe"
+            android:gravity=""
+
+            />
+
+
 
 
 
