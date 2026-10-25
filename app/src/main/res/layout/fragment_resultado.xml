@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#6B4F4F"
+            >
+            <ImageButton
+                app:tint="@color/white"
+                android:id="@+id/btnVolver"
+                android:layout_width="85dp"
+                android:layout_height="75dp"
+                android:src="@drawable/icono_flecha_volver"
+                android:backgroundTint="#6B4F4F"
+                />
+            <TextView
+                android:id="@+id/tvTituloRecomendacions"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:text="@string/strTvRecomendacions"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="25sp"
+                android:fontFamily="monospace"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivTipo"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvNumeroRecomendacions"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:paddingVertical="30dp"
+            android:text="@string/strTvNumeroRecomendacions"
+
+            android:textSize="20sp"
+            style="@style/myStyle"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#6B4F4F"
+            >
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icono_local_cafe"
+                android:backgroundTint="#6B4F4F"
+                />
+            <TextView
+                android:background="#6B4F4F"
+                android:textColor="@color/white"
+                android:id="@+id/tvRecomendacion1"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="75dp"
+                android:text="@string/strDescricion"
+                style="@style/myStyle"
+                android:paddingVertical="25dp"
+                />
+            <ImageButton
+                android:id="@+id/btnRecomendacion1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icono_flecha_entrar"
+                android:backgroundTint="#6B4F4F"
+                app:tint="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#6B4F4F"
+            >
+            <ImageButton
+                android:id="@+id/btnRecomendacion2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icono_local_cafe"
+                android:backgroundTint="#6B4F4F"
+                />
+            <TextView
+                android:background="#6B4F4F"
+                android:textColor="@color/white"
+                android:id="@+id/tvRecomendacion2"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="75dp"
+                android:text="@string/strDescricion"
+                style="@style/myStyle"
+                android:paddingVertical="25dp"
+                />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icono_flecha_entrar"
+                android:backgroundTint="#6B4F4F"
+                app:tint="@color/white"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/myStyle"
+            android:textAlignment="textStart"
+            android:paddingVertical="10dp"
+            android:text="Sabias que..."
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:paddingStart="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/myStyle"
+            android:textAlignment="textStart"
+            android:text="@string/tvCuriosidad"
+            android:paddingVertical="10dp"
+            android:padding="15dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

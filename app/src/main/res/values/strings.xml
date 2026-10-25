@@ -1,7 +1,13 @@
 <resources>
     <string name="strCabeceira">One More Coffee</string>
     <string name="strPregunta">Que che apetece?</string>
-    
+    <string name="strDescricion">Con xeo para os dias de calor</string>
+    <string name="btnRecomendar">Recomiendame!</string>
+    <string name="strTvNumeroRecomendacions">2 recomendacions para sua seleccion</string>
+    <string name="tvCuriosidad">Brasil es el mayor productor de cafe del mundo!</string>
+
+    <string name="strTvRecomendacions">Recomendacions</string>
+
     <string-array name="entriesSpTipoCafe">
         <item>Algo frío</item>
         <item>Descafeinado</item>

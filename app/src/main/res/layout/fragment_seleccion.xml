@@ -45,23 +45,37 @@
             android:text="@string/strPregunta"
 
             android:textSize="25sp"
-            android:textAlignment="center"
-            android:fontFamily="serif"
-            android:textStyle="bold"
+            style="@style/myStyle"
+
             />
         <Spinner
             android:id="@+id/spTipoCafe"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            style="@style/myStyle"
 
             android:entries="@array/entriesSpTipoCafe"
-            android:gravity=""
 
             />
+        <TextView
+            android:id="@+id/tvDescricionTipo"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:text="@string/strDescricion"
+            style="@style/myStyle"
+            android:paddingVertical="30dp"
+            />
 
-
-
-
+        <Button
+            android:layout_margin="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            style="@style/myStyle"
+            android:textColor="@color/white"
+            android:text="@string/btnRecomendar"
+            android:textSize="20sp"
+            android:backgroundTint="#6B4F4F"
+            />
 
 
     </LinearLayout>
