@@ -11,7 +11,8 @@
         android:id="@+id/container_fragment_seleccion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.example.onemorecoffecompleto.SeleccionFragment"
+        app:defaultNavHost="true"
+        android:name="androidx.navigation.fragment.nav_graph"
         />
 
 
