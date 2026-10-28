@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_seleccion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -35,6 +36,7 @@
             android:id="@+id/ivCabeceira"
             android:layout_width="match_parent"
             android:layout_height="240dp"
+            android:src="@drawable/cafe_leite"
             />
 
         <TextView
@@ -66,16 +68,37 @@
             android:paddingVertical="30dp"
             />
 
-        <Button
-            android:layout_margin="45dp"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            style="@style/myStyle"
-            android:textColor="@color/white"
-            android:text="@string/btnRecomendar"
-            android:textSize="20sp"
-            android:backgroundTint="#6B4F4F"
-            />
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingVertical="30dp"
+            >
+            <Button
+                android:id="@+id/btnSorprendeme"
+                android:layout_margin="15dp"
+                android:layout_width="90dp"
+                android:layout_height="75dp"
+                style="@style/myStyle"
+                android:textColor="@color/white"
+                android:text="@string/strBtnSorprendeme"
+                android:textSize="15sp"
+                android:backgroundTint="#6B4F4F"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/btnRecomiendame"
+                android:layout_margin="15dp"
+                android:layout_width="90dp"
+                android:layout_height="75dp"
+                style="@style/myStyle"
+                android:textColor="@color/white"
+                android:text="@string/strBtnRecomendar"
+                android:textSize="15sp"
+                android:backgroundTint="#6B4F4F"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
 
 
     </LinearLayout>
